@@ -12,7 +12,8 @@
         tools:layout="@layout/fragment_menu" >
         <action
             android:id="@+id/action_menuFragment_to_cuidadoFragment"
-            app:destination="@id/cuidadoFragment" />
+            app:destination="@id/cuidadoFragment"
+            />
         <action
             android:id="@+id/action_menuFragment_to_comidaFragment"
             app:destination="@id/comidaFragment" />

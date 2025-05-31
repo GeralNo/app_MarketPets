@@ -29,13 +29,13 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/cuidadoImage"
+                    android:id="@+id/adopcionImage"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
-                    android:contentDescription="Imagen de producto"
-                    app:srcCompat="@drawable/housekeeper" />
+                    android:contentDescription="Imagen de la mascota"
+                    app:srcCompat="@drawable/gatitoo" />
             </LinearLayout>
 
             <LinearLayout
@@ -46,7 +46,7 @@
                 android:paddingStart="16dp">
 
                 <TextView
-                    android:id="@+id/cuidadorNombre"
+                    android:id="@+id/adopcionNombre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="8dp"
@@ -57,30 +57,30 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/cuidadorDescripcion"
+                    android:id="@+id/adopcionDescripcion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="4dp"
                     android:fontFamily="@font/raleway_regular"
-                    android:text="Descripción del cuidador "
+                    android:text="Descripción de la mascota: "
                     android:textColor="@color/gray_dark" />
 
                 <TextView
-                    android:id="@+id/cuidadorDisponibilidad"
+                    android:id="@+id/adopcionEdad"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="8dp"
                     android:fontFamily="@font/raleway_regular"
-                    android:text="Tiempo de disponibilidad: "
+                    android:text="Edad: "
                     android:textColor="@color/gray_dark" />
 
                 <TextView
-                    android:id="@+id/cuidadorPrecio"
+                    android:id="@+id/adopcionRaza"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="4dp"
                     android:fontFamily="@font/raleway_bold"
-                    android:text="$00,000"
+                    android:text="Raza: "
                     android:textColor="@color/primary"
                     android:textSize="16sp"
                     android:textStyle="bold" />

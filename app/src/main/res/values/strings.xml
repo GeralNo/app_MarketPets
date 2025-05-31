@@ -20,12 +20,6 @@
         <item name="colorControlActivated">@color/amarillo</item>
     </style>
 
-    <string name="favorite">favourite</string>
-    <string name="content_description_favorite">favourite robots</string>
-    <string name="search">search</string>
-    <string name="content_description_search">search robots</string>
-    <string name="more">more</string>
-    <string name="content_description_more">more content</string>
 
     <string name="email_required">Ingrese su correo electrónico</string>
     <string name="invalid_email">El formato del correo electrónico no es válido</string>

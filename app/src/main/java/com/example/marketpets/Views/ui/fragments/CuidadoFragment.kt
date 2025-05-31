@@ -75,7 +75,7 @@ class CuidadoFragment : Fragment() {
         layout.addView(descripcionText)
 
         val disponibilidadText = TextView(requireContext())
-        disponibilidadText.text = "Marca: ${cuidado.descripcion}"
+        disponibilidadText.text = "Disponibilidad: ${cuidado.disponibilidad}"
         disponibilidadText.setPadding(0, 4, 0, 4)
         layout.addView(disponibilidadText)
 
