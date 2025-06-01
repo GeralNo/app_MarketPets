@@ -4,7 +4,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,7 +14,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="83dp"
+            android:layout_height="78dp"
             android:background="@color/purple">
 
             <ImageButton
@@ -44,12 +45,12 @@
                 android:textStyle="bold" />
 
             <ImageView
-                android:layout_width="62dp"
-                android:layout_height="51dp"
+                android:layout_width="58dp"
+                android:layout_height="43dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="18dp"
-                android:layout_marginEnd="34dp"
+                android:layout_marginEnd="35dp"
                 app:srcCompat="@drawable/shopping" />
 
         </RelativeLayout>
@@ -64,6 +65,8 @@
             android:id="@+id/recyclerViewAdopcion"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:paddingBottom="90dp"
+            android:clipToPadding="false"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
     </LinearLayout>

@@ -4,7 +4,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,7 +14,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="83dp"
+            android:layout_height="78dp"
             android:background="@color/purple">
 
             <ImageButton
@@ -35,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="123dp"
+                android:layout_marginEnd="124dp"
                 android:layout_marginBottom="15dp"
                 android:fontFamily="@font/raleway_bold"
                 android:text="Diversión"
@@ -44,389 +45,21 @@
                 android:textStyle="bold" />
 
             <ImageView
-                android:layout_width="52dp"
-                android:layout_height="46dp"
+                android:layout_width="58dp"
+                android:layout_height="43dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="53dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="35dp"
                 app:srcCompat="@drawable/shopping" />
         </RelativeLayout>
 
-        <ScrollView
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewDiversion"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fillViewport="true">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardElevation="4dp"
-                    app:cardCornerRadius="8dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="12dp">
-
-                        <ImageView
-                            android:id="@+id/imageCat"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/park__1_"
-                            android:scaleType="centerCrop"
-                            android:layout_marginEnd="16dp"/>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:id="@+id/titleComida"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-                                android:fontFamily="@font/raleway_bold"
-                                android:text="Conecta con la naturaleza"
-                                android:maxLines="1"
-                                android:ellipsize="end"/>
-
-                            <TextView
-                                android:id="@+id/durationCat"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/raleway_regular"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-                                android:text="Acompañamos a tu peludo en las mejores experiencias, al aire libre"
-                                android:layout_marginTop="4dp"/>
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp">
-
-                                <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/btnAgregarConecta"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="48dp"
-                                    android:layout_alignParentEnd="true"
-                                    android:minWidth="120dp"
-                                    android:text="@string/agregar"
-                                    android:textColor="@color/white"
-                                    android:textSize="14sp"
-                                    android:paddingStart="16dp"
-                                    android:paddingEnd="16dp"
-                                    android:insetTop="0dp"
-                                    android:insetBottom="0dp"
-                                    app:backgroundTint="#028306"
-                                    app:cornerRadius="20dp"
-                                    app:elevation="2dp" />
-                            </RelativeLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardElevation="4dp"
-                    app:cardCornerRadius="8dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="12dp">
-
-                        <ImageView
-                            android:id="@+id/imageDog"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/park__2_"
-                            android:scaleType="centerCrop"
-                            android:layout_marginEnd="16dp"/>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:id="@+id/titleDog"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-                                android:fontFamily="@font/raleway_bold"
-                                android:text="Complejo de pruebas "
-                                android:maxLines="1"
-                                android:ellipsize="end"/>
-
-                            <TextView
-                                android:id="@+id/durationDog"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/raleway_regular"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-                                android:text="El mejor complejo para tu peludito en donde demostrara su rapidez y su precisión "
-                                android:layout_marginTop="4dp"/>
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp">
-
-                                <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/btnAgregarComplejo"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="48dp"
-                                    android:layout_alignParentEnd="true"
-                                    android:minWidth="120dp"
-                                    android:text="@string/agregar"
-                                    android:textColor="@color/white"
-                                    android:textSize="14sp"
-                                    android:paddingStart="16dp"
-                                    android:paddingEnd="16dp"
-                                    android:insetTop="0dp"
-                                    android:insetBottom="0dp"
-                                    app:backgroundTint="#4CAF50"
-                                    app:cornerRadius="20dp"
-                                    app:elevation="2dp" />
-                            </RelativeLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardElevation="4dp"
-                    app:cardCornerRadius="8dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="12dp">
-
-                        <ImageView
-                            android:id="@+id/imageTuna"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/yoga"
-                            android:scaleType="centerCrop"
-                            android:layout_marginEnd="16dp"/>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:id="@+id/titleTuna"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-                                android:fontFamily="@font/raleway_bold"
-                                android:text="Yoga con tu mejor amigo"
-                                android:maxLines="1"
-                                android:ellipsize="end"/>
-
-                            <TextView
-                                android:id="@+id/durationTuna"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/raleway_regular"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-                                android:text="Las mejores actividades psicoterapéuticas con tu peludo, afianza el vinculo.  "
-                                android:layout_marginTop="4dp"/>
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp">
-
-                                <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/btnAgregarYoga"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="48dp"
-                                    android:layout_alignParentEnd="true"
-                                    android:minWidth="120dp"
-                                    android:text="@string/agregar"
-                                    android:textColor="@color/white"
-                                    android:textSize="14sp"
-                                    android:paddingStart="16dp"
-                                    android:paddingEnd="16dp"
-                                    android:insetTop="0dp"
-                                    android:insetBottom="0dp"
-                                    app:backgroundTint="@color/verde_uno"
-                                    app:cornerRadius="20dp"
-                                    app:elevation="2dp" />
-
-                            </RelativeLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardElevation="4dp"
-                    app:cardCornerRadius="8dp">
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="12dp">
-
-                        <ImageView
-                            android:id="@+id/imageDoggy"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/water_slide"
-                            android:scaleType="centerCrop"
-                            android:layout_marginEnd="16dp"/>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:id="@+id/titleDoggy"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-                                android:fontFamily="@font/raleway_bold"
-                                android:text="Aqua diversión
-"
-                                android:maxLines="1"
-                                android:ellipsize="end"/>
-
-                            <TextView
-                                android:id="@+id/durationDoggy"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/raleway_regular"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-                                android:text="Disfruta en nuestro Aqua parque junto a tu mascota"
-                                android:layout_marginTop="4dp"/>
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp">
-
-                                <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/btnAgregarAqua"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="48dp"
-                                    android:layout_alignParentEnd="true"
-                                    android:minWidth="120dp"
-                                    android:text="@string/agregar"
-                                    android:textColor="@color/white"
-                                    android:textSize="14sp"
-                                    android:paddingStart="16dp"
-                                    android:paddingEnd="16dp"
-                                    android:insetTop="0dp"
-                                    android:insetBottom="0dp"
-                                    app:backgroundTint="@color/verde_dos"
-                                    app:cornerRadius="20dp"
-                                    app:elevation="2dp" />
-                            </RelativeLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardElevation="4dp"
-                    app:cardCornerRadius="8dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="12dp">
-
-                        <ImageView
-                            android:id="@+id/imageKitty"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/park"
-                            android:scaleType="centerCrop"
-                            android:layout_marginEnd="16dp"/>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:id="@+id/titleKitty"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-                                android:fontFamily="@font/raleway_bold"
-                                android:text="Colegio perruno
-"
-                                android:maxLines="1"
-                                android:ellipsize="end"/>
-
-                            <TextView
-                                android:id="@+id/durationKitty"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/raleway_regular"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-                                android:text="Las mejores instalaciones , siente la seguridad de confiarnos a tu mejor amigo."
-                                android:layout_marginTop="4dp"/>
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp">
-
-                                <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/btnAgregarColegio"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="48dp"
-                                    android:layout_alignParentEnd="true"
-                                    android:minWidth="120dp"
-                                    android:text="@string/agregar"
-                                    android:textColor="@color/white"
-                                    android:textSize="14sp"
-                                    android:paddingStart="16dp"
-                                    android:paddingEnd="16dp"
-                                    android:insetTop="0dp"
-                                    android:insetBottom="0dp"
-                                    app:backgroundTint="@color/verde_tres"
-                                    app:cornerRadius="20dp"
-                                    app:elevation="2dp" />
-                            </RelativeLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-            </LinearLayout>
-        </ScrollView>
+            android:paddingBottom="90dp"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
     </LinearLayout>
 </RelativeLayout>

@@ -4,7 +4,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,7 +14,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="83dp"
+            android:layout_height="78dp"
             android:background="@color/purple">
 
             <ImageButton
@@ -30,13 +31,14 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:tint="@color/white" />
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="122dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="142dp"
+                android:layout_marginBottom="15dp"
                 android:fontFamily="@font/raleway_bold"
                 android:text="Juguetes"
                 android:textColor="@color/curuba"
@@ -44,392 +46,21 @@
                 android:textStyle="bold" />
 
             <ImageView
-                android:layout_width="57dp"
-                android:layout_height="52dp"
+                android:layout_width="58dp"
+                android:layout_height="43dp"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
+                android:layout_marginTop="18dp"
                 android:layout_marginEnd="35dp"
-                android:layout_marginBottom="15dp"
-                android:contentDescription="Icono de compras"
                 app:srcCompat="@drawable/shopping" />
         </RelativeLayout>
 
-        <ScrollView
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewJuguetes"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fillViewport="true">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardElevation="4dp"
-                    app:cardCornerRadius="8dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="12dp">
-
-                        <ImageView
-                            android:id="@+id/ball_image"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/ball"
-                            android:scaleType="centerCrop"
-                            android:layout_marginEnd="16dp"
-                            android:contentDescription="Imagen de pelota" />
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:id="@+id/ball_title"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-                                android:fontFamily="@font/raleway_bold"
-                                android:text="Juguete Sorpresa"
-                                android:maxLines="1"
-                                android:ellipsize="end" />
-
-                            <TextView
-                                android:id="@+id/ball_duration"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-                                android:text="Esta cajita sorpresa contiene un juguete especial para tu mascota. ¿Que habrá dentro? ¡Descúbrelo!"
-                                android:layout_marginTop="4dp" />
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp">
-
-                                <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/btnAgregarSorpresa"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="48dp"
-                                    android:layout_alignParentEnd="true"
-                                    android:minWidth="120dp"
-                                    android:text="@string/agregar"
-                                    android:textColor="@color/white"
-                                    android:textSize="14sp"
-                                    android:paddingStart="16dp"
-                                    android:paddingEnd="16dp"
-                                    android:insetTop="0dp"
-                                    android:insetBottom="0dp"
-                                    app:backgroundTint="@color/button_blue"
-                                    app:cornerRadius="20dp"
-                                    app:elevation="2dp" />
-                            </RelativeLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardElevation="4dp"
-                    app:cardCornerRadius="8dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="12dp">
-
-                        <ImageView
-                            android:id="@+id/toy1_image"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/toy__1_"
-                            android:scaleType="centerCrop"
-                            android:layout_marginEnd="16dp"
-                            android:contentDescription="Imagen de lazo" />
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:id="@+id/toy1_title"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-                                android:fontFamily="@font/raleway_bold"
-                                android:text="Lazo"
-                                android:maxLines="1"
-                                android:ellipsize="end" />
-
-                            <TextView
-                                android:id="@+id/toy1_duration"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-                                android:text="Con este lazo resistente y colorido  fortaleceras las mandibulas de tu mascota y tendras una diversión asegurada."
-                                android:layout_marginTop="4dp" />
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp">
-
-                                <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/btnAgregarLazo"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="48dp"
-                                    android:layout_alignParentEnd="true"
-                                    android:minWidth="120dp"
-                                    android:text="@string/agregar"
-                                    android:textColor="@color/white"
-                                    android:textSize="14sp"
-                                    android:paddingStart="16dp"
-                                    android:paddingEnd="16dp"
-                                    android:insetTop="0dp"
-                                    android:insetBottom="0dp"
-                                    app:backgroundTint="#C568B8"
-                                    app:cornerRadius="20dp"
-                                    app:elevation="2dp" />
-                            </RelativeLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardElevation="4dp"
-                    app:cardCornerRadius="8dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="12dp">
-
-                        <ImageView
-                            android:id="@+id/toys_image"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_marginEnd="16dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/toys"
-                            android:contentDescription="Imagen de juguetes" />
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center_vertical"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:id="@+id/toys_title"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:ellipsize="end"
-                                android:fontFamily="@font/raleway_bold"
-                                android:maxLines="1"
-                                android:text="Pelota"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
-
-                            <TextView
-                                android:id="@+id/toys_duration"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:text="Una pelota para perseguir y un hueso para morder. Entretenimiento doble para mantener a tu peludito activo y feliz."
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp">
-
-                                <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/btnAgregarPelota"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="48dp"
-                                    android:layout_alignParentEnd="true"
-                                    android:minWidth="120dp"
-                                    android:text="@string/agregar"
-                                    android:textColor="@color/white"
-                                    android:textSize="14sp"
-                                    android:paddingStart="16dp"
-                                    android:paddingEnd="16dp"
-                                    android:insetTop="0dp"
-                                    android:insetBottom="0dp"
-                                    app:backgroundTint="#43B8DC"
-                                    app:cornerRadius="20dp"
-                                    app:elevation="2dp" />
-                            </RelativeLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardElevation="4dp"
-                    app:cardCornerRadius="8dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="12dp">
-
-                        <ImageView
-                            android:id="@+id/mouse_image"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_marginEnd="16dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/mouse"
-                            android:contentDescription="Imagen de ratón" />
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center_vertical"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:id="@+id/mouse_title"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:ellipsize="end"
-                                android:fontFamily="@font/raleway_bold"
-                                android:maxLines="1"
-                                android:text="Ratón a Cuerda"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
-
-                            <TextView
-                                android:id="@+id/mouse_duration"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:text="Un pequeño ratón que cobra  vida con solo girar la cuerda. Perfecto para estimular el instinto cazador de tu gato."
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp">
-
-                                <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/btnAgregarRaton"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="48dp"
-                                    android:layout_alignParentEnd="true"
-                                    android:minWidth="120dp"
-                                    android:text="@string/agregar"
-                                    android:textColor="@color/white"
-                                    android:textSize="14sp"
-                                    android:paddingStart="16dp"
-                                    android:paddingEnd="16dp"
-                                    android:insetTop="0dp"
-                                    android:insetBottom="0dp"
-                                    app:backgroundTint="#AF96DA"
-                                    app:cornerRadius="20dp"
-                                    app:elevation="2dp" />
-                            </RelativeLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardElevation="4dp"
-                    app:cardCornerRadius="8dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="12dp">
-
-                        <ImageView
-                            android:id="@+id/cat_image"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/cat"
-                            android:scaleType="centerCrop"
-                            android:layout_marginEnd="16dp"
-                            android:contentDescription="Imagen de gato" />
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:id="@+id/cat_title"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-                                android:fontFamily="@font/raleway_bold"
-                                android:text="Gimnasio"
-                                android:maxLines="1"
-                                android:ellipsize="end" />
-
-                            <TextView
-                                android:id="@+id/cat_duration"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-                                android:text="Este gimnasio es ideal, cuenta con plataformas, juguetes colgantes y escondites para que tu mascota explore, trepe y se divierta sin parar."
-                                android:layout_marginTop="4dp" />
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp">
-
-                                <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/btnAgregarGimnasio"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="48dp"
-                                    android:layout_alignParentEnd="true"
-                                    android:minWidth="120dp"
-                                    android:text="@string/agregar"
-                                    android:textColor="@color/white"
-                                    android:textSize="14sp"
-                                    android:paddingStart="16dp"
-                                    android:paddingEnd="16dp"
-                                    android:insetTop="0dp"
-                                    android:insetBottom="0dp"
-                                    app:backgroundTint="#C5855C"
-                                    app:cornerRadius="20dp"
-                                    app:elevation="2dp" />
-                            </RelativeLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-
-            </LinearLayout>
-        </ScrollView>
+            android:paddingBottom="90dp"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
     </LinearLayout>
 </RelativeLayout>

@@ -10,7 +10,8 @@
     android:foregroundTint="@color/white"
     android:outlineAmbientShadowColor="@color/white"
     android:outlineSpotShadowColor="@color/white"
-    tools:context=".Views.ui.activities.RegistrarActivity">
+    tools:context=".Views.ui.activities.RegistrarActivity"
+    android:fitsSystemWindows="true">
 
     <ImageButton
         android:id="@+id/btnBack"

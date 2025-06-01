@@ -11,7 +11,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="16dp">
 
@@ -21,14 +21,14 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/comidaImage"
+                android:id="@+id/juguetesImage"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:contentDescription="Imagen de producto"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/cat_food" />
+                app:srcCompat="@drawable/ball" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -37,48 +37,40 @@
                 android:orientation="vertical"
                 android:paddingStart="16dp">
 
-                <TextView
-                    android:id="@+id/comidaNombre"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="8dp"
-                    android:text="Nombre del producto:"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+            <TextView
+                android:id="@+id/juguetesNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Nombre del juguete"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/juguetesMarca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:text="Marca del juguete"
+                android:textColor="@color/gray_dark" />
 
-                <TextView
-                    android:id="@+id/comidaMarca"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="4dp"
-                    android:text="Marca del producto:"
-                    android:textColor="@color/gray_dark" />
+            <TextView
+                android:id="@+id/juguetesPrecio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:text="$00,000"
+                android:textColor="@color/primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/comidaPrecio"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="4dp"
-                    android:text="$00,000"
-                    android:textColor="@color/primary"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/comidaTamano"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="4dp"
-                    android:text="Tamaño:" />
-
-                <TextView
-                    android:id="@+id/comidaDisponibilidad"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="12dp"
-                    android:text="0 unidades disponibles."
-                    android:textColor="@color/gray_dark" />
+            <TextView
+                android:id="@+id/juguetesDisponibilidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:text="2 unidades disponibles"
+                android:textColor="@color/gray_dark" />
             </LinearLayout>
         </LinearLayout>
 

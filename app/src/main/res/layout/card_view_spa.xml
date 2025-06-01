@@ -7,8 +7,8 @@
     android:layout_height="wrap_content"
     android:layout_margin="12dp"
     app:cardCornerRadius="12dp"
-    app:cardElevation="6dp">
-
+    app:cardElevation="6dp"
+    >
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,13 +29,13 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/cuidadoImage"
+                    android:id="@+id/spaImage"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:contentDescription="Imagen de producto"
-                    app:srcCompat="@drawable/housekeeper" />
+                    app:srcCompat="@drawable/haircut" />
             </LinearLayout>
 
             <LinearLayout
@@ -46,41 +46,31 @@
                 android:paddingStart="16dp">
 
                 <TextView
-                    android:id="@+id/cuidadorNombre"
+                    android:id="@+id/spaNombre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="8dp"
-                    android:fontFamily="@font/raleway_bold"
-                    android:text="Nombre: "
+                    android:text="Nombre Producto Spa: "
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/cuidadorDescripcion"
+                    android:id="@+id/spaDescripcion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="4dp"
                     android:fontFamily="@font/raleway_regular"
-                    android:text="Descripción del cuidador "
+                    android:text="Descripción"
                     android:textColor="@color/gray_dark" />
 
                 <TextView
-                    android:id="@+id/cuidadorDisponibilidad"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="8dp"
-                    android:fontFamily="@font/raleway_regular"
-                    android:text="Tiempo de disponibilidad: "
-                    android:textColor="@color/gray_dark" />
-
-                <TextView
-                    android:id="@+id/cuidadorPrecio"
+                    android:id="@+id/spaPrecio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="4dp"
                     android:fontFamily="@font/raleway_bold"
-                    android:text="$00,000"
+                    android:text="00,000"
                     android:textColor="@color/primary"
                     android:textSize="16sp"
                     android:textStyle="bold" />

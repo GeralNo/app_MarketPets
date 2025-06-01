@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/curuba"
-    tools:context=".Views.ui.activities.IngresarActivity">
+    tools:context=".Views.ui.activities.IngresarActivity"
+    android:fitsSystemWindows="true">
 
     <ImageView
         android:id="@+id/imageView3"

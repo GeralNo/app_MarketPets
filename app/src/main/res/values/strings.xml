@@ -38,4 +38,7 @@
     <string name="agregar">Agregar</string>
     <string name="buscar_productos">Buscar productos...</string>
 
+    <string name="boton_detalles">Detalles</string>
+    <string name="descripcion_favorito">Añadir a favoritos</string>
+
 </resources>

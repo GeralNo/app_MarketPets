@@ -4,18 +4,17 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
-
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="83dp"
+            android:layout_height="78dp"
             android:background="@color/purple">
 
             <ImageButton
@@ -37,331 +36,35 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="158dp"
-                android:layout_marginBottom="18dp"
+                android:layout_marginEnd="136dp"
+                android:layout_marginBottom="15dp"
                 android:fontFamily="@font/raleway_bold"
-                android:text="Seguro"
+                android:text="Seguros"
                 android:textColor="@color/curuba"
                 android:textSize="40sp"
                 android:textStyle="bold" />
 
             <ImageView
-                android:layout_width="62dp"
-                android:layout_height="51dp"
+                android:layout_width="58dp"
+                android:layout_height="43dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="18dp"
-                android:layout_marginEnd="52dp"
-                app:srcCompat="@drawable/shopping"
-                android:contentDescription="Icono de compras" />
+                android:layout_marginEnd="35dp"
+                app:srcCompat="@drawable/shopping" />
         </RelativeLayout>
-
-
         <ImageView
-            android:id="@+id/insurance_main_image"
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            app:srcCompat="@drawable/pet_insurance__1_"
-            android:contentDescription="Imagen principal del seguro" />
+            android:layout_height="221dp"
+            app:srcCompat="@drawable/pet_insurance__1_" />
 
-
-        <ScrollView
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewSeguro"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fillViewport="true">
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="4dp">
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="12dp">
-
-
-                        <ImageView
-                            android:id="@+id/health_insurance_image"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_marginEnd="16dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/pet_insurance"
-                            android:contentDescription="Imagen del seguro de salud" />
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center_vertical"
-                            android:orientation="vertical">
-
-
-                            <TextView
-                                android:id="@+id/health_insurance_title"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:ellipsize="end"
-                                android:fontFamily="@font/raleway_bold"
-                                android:maxLines="1"
-                                android:text="Seguro de Salud"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
-
-
-                            <TextView
-                                android:id="@+id/health_insurance_duration"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:text="Cobertura escencial para consultas veterinarias."
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
-
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:orientation="horizontal">
-
-                                <Space
-                                    android:layout_width="0dp"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="1"/>
-
-                                <RatingBar
-                                    style="@style/Widget.AppCompat.RatingBar.Small"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginEnd="16dp"
-                                    android:isIndicator="true"
-                                    android:numStars="5"
-                                    android:rating="4.5"
-                                    android:stepSize="0.5"
-                                    android:theme="@style/RatingBar" />
-
-                                <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/btnAgregarSeguro"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="48dp"
-                                    android:minWidth="120dp"
-                                    android:text="@string/agregar"
-                                    android:textColor="@color/white"
-                                    android:textSize="14sp"
-                                    android:paddingStart="16dp"
-                                    android:paddingEnd="16dp"
-                                    android:insetTop="0dp"
-                                    android:insetBottom="0dp"
-                                    app:backgroundTint="#CD5B3B"
-                                    app:cornerRadius="20dp"
-                                    app:elevation="2dp"/>
-                            </LinearLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="4dp">
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="12dp">
-
-
-                        <ImageView
-                            android:id="@+id/emergency_insurance_image"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_marginEnd="16dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/emergency"
-                            android:contentDescription="Imagen del seguro de emergencias" />
-
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center_vertical"
-                            android:orientation="vertical">
-
-
-                            <TextView
-                                android:id="@+id/emergency_insurance_title"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:ellipsize="end"
-                                android:fontFamily="@font/raleway_bold"
-                                android:maxLines="1"
-                                android:text="Seguro de Emergencias"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
-
-
-                            <TextView
-                                android:id="@+id/emergency_insurance_duration"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:text="En caso de accidentes o enfermedades inesperadas, este seguro cubre hopitalizacion."
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:orientation="horizontal">
-
-                                <Space
-                                    android:layout_width="0dp"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="1"/>
-
-                                <RatingBar
-                                    style="@style/Widget.AppCompat.RatingBar.Small"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginEnd="16dp"
-                                    android:isIndicator="true"
-                                    android:numStars="5"
-                                    android:rating="4.5"
-                                    android:stepSize="0.5"
-                                    android:theme="@style/RatingBar"/>
-
-                                <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/btnAgregarEmergencia"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="48dp"
-                                    android:minWidth="120dp"
-                                    android:text="@string/agregar"
-                                    android:textColor="@color/white"
-                                    android:textSize="14sp"
-                                    android:paddingStart="16dp"
-                                    android:paddingEnd="16dp"
-                                    android:insetTop="0dp"
-                                    android:insetBottom="0dp"
-                                    app:backgroundTint="#E74D4D"
-                                    app:cornerRadius="20dp"
-                                    app:elevation="2dp"/>
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-
-
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="4dp">
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="12dp">
-
-
-                        <ImageView
-                            android:id="@+id/full_insurance_image"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_marginEnd="16dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/veterinary_care"
-                            android:contentDescription="Imagen del seguro completo" />
-
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center_vertical"
-                            android:orientation="vertical">
-
-
-                            <TextView
-                                android:id="@+id/full_insurance_title"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:ellipsize="end"
-                                android:fontFamily="@font/raleway_bold"
-                                android:maxLines="1"
-                                android:text="Seguro"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
-
-
-                            <TextView
-                                android:id="@+id/full_insurance_duration"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:text="Cobertura completa de consultas, emergencias, cirugias, medicamentos y tratamientos."
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:orientation="horizontal">
-
-                                <Space
-                                    android:layout_width="0dp"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="1"/>
-
-
-                                <RatingBar
-                                    style="@style/Widget.AppCompat.RatingBar.Small"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginEnd="16dp"
-                                    android:isIndicator="true"
-                                    android:numStars="5"
-                                    android:rating="4.5"
-                                    android:stepSize="0.5"
-                                    android:theme="@style/RatingBar"/>
-
-                                <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/btnAgregarSeguroA"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="48dp"
-                                    android:minWidth="120dp"
-                                    android:text="@string/agregar"
-                                    android:textColor="@color/white"
-                                    android:textSize="14sp"
-                                    android:paddingStart="16dp"
-                                    android:paddingEnd="16dp"
-                                    android:insetTop="0dp"
-                                    android:insetBottom="0dp"
-                                    app:backgroundTint="#19CEB9"
-                                    app:cornerRadius="20dp"
-                                    app:elevation="2dp"/>
-                            </LinearLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-            </LinearLayout>
-        </ScrollView>
+            android:paddingBottom="90dp"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
     </LinearLayout>
 </RelativeLayout>
