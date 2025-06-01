@@ -29,7 +29,6 @@ jobs:
       with:
         name: app-debug.apk
         path: app/build/outputs/apk/debug/app-debug.apk
-
   firebase-test-lab:
     needs: build
     runs-on: ubuntu-latest
@@ -40,13 +39,6 @@ jobs:
         name: app-debug.apk
     - name: Display structure of downloaded files
       run: ls -R
-
-    - name: Autenticación con Firebase
-      run: |
-        echo "${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}" > firebase-key.json
-        gcloud auth activate-service-account --key-file=firebase-key.json
-        gcloud config set project marketpets-456007
-
     - id: 'auth'
       if: ${{ hashFiles('app-debug.apk') != '' }}
       uses: 'google-github-actions/auth@v2'
@@ -57,4 +49,5 @@ jobs:
       uses: 'google-github-actions/setup-gcloud@v2'
     - name: 'Running tests in Firebase Test Lab'
       if: ${{ hashFiles('app-debug.apk') != '' }}
+      # run: 'gcloud info'
       run: 'gcloud firebase test android run --app app-debug.apk --type robo --device model=MediumPhone.arm,version=30,locale=en,orientation=portrait'
