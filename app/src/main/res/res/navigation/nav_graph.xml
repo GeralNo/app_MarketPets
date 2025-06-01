@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.marketpets.Views.ui.fragments.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_cuidadoFragment"
+            app:destination="@id/cuidadoFragment"
+            />
+        <action
+            android:id="@+id/action_menuFragment_to_comidaFragment"
+            app:destination="@id/comidaFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_juguetesFragment"
+            app:destination="@id/juguetesFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_veterinarioFragment"
+            app:destination="@id/veterinarioFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_segurosFragment"
+            app:destination="@id/seguroFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_adopcionFragment"
+            app:destination="@id/adopcionFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_spaFragment"
+            app:destination="@id/spaFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_diversionFragment"
+            app:destination="@id/diversionFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_favoritosFragment"
+            app:destination="@id/favoritosFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_ayudaFragment"
+            app:destination="@id/ayudaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cuidadoFragment"
+        android:name="com.example.marketpets.Views.ui.fragments.CuidadoFragment"
+        android:label="fragment_cuidado"
+        tools:layout="@layout/fragment_cuidado" />
+    <fragment
+        android:id="@+id/comidaFragment"
+        android:name="com.example.marketpets.Views.ui.fragments.ComidaFragment"
+        android:label="fragment_comida"
+        tools:layout="@layout/fragment_comida" />
+    <fragment
+        android:id="@+id/juguetesFragment"
+        android:name="com.example.marketpets.Views.ui.fragments.JuguetesFragment"
+        android:label="fragment_juguetes"
+        tools:layout="@layout/fragment_juguetes" />
+    <fragment
+        android:id="@+id/veterinarioFragment"
+        android:name="com.example.marketpets.Views.ui.fragments.VeterinarioFragment"
+        android:label="fragment_veterinario"
+        tools:layout="@layout/fragment_veterinario" />
+    <fragment
+        android:id="@+id/seguroFragment"
+        android:name="com.example.marketpets.Views.ui.fragments.SeguroFragment"
+        android:label="fragment_seguros"
+        tools:layout="@layout/fragment_seguro" />
+    <fragment
+        android:id="@+id/adopcionFragment"
+        android:name="com.example.marketpets.Views.ui.fragments.AdopcionFragment"
+        android:label="fragment_adopcion"
+        tools:layout="@layout/fragment_adopcion" />
+    <fragment
+        android:id="@+id/spaFragment"
+        android:name="com.example.marketpets.Views.ui.fragments.SpaFragment"
+        android:label="fragment_spa"
+        tools:layout="@layout/fragment_spa" />
+    <fragment
+        android:id="@+id/diversionFragment"
+        android:name="com.example.marketpets.Views.ui.fragments.DiversionFragment"
+        android:label="fragment_diversion"
+        tools:layout="@layout/fragment_diversion" />
+
+    <fragment
+        android:id="@+id/favoritosFragment"
+        android:name="com.example.marketpets.Views.ui.fragments.FavoritoFragment"
+        android:label="fragment_favoritos"
+        tools:layout="@layout/fragment_favoritos" />
+    <fragment
+        android:id="@+id/ayudaFragment"
+        android:name="com.example.marketpets.Views.ui.fragments.AyudaFragment"
+        android:label="fragment_ayuda"
+        tools:layout="@layout/fragment_ayuda" />
+</navigation>

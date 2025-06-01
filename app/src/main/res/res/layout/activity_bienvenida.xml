@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".Views.ui.activities.BienvenidaActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="278dp"
+        android:layout_height="262dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642"
+        app:srcCompat="@drawable/otro_pets" />
+
+    <TextView
+        android:id="@+id/Raleway_Bold"
+        android:layout_width="245dp"
+        android:layout_height="76dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="Encuentra lo mejor para él aquí"
+        android:textColor="@color/curuba"
+        android:textColorLink="@color/curuba"
+        android:textSize="25sp"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/Raleway_BBold"
+        android:layout_width="300dp"
+        android:layout_height="105dp"
+        android:autoSizeTextType="none"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="¡Haz feliz a tu mascota!"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="37sp"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135" />
+</androidx.constraintlayout.widget.ConstraintLayout>

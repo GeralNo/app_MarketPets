@@ -73,7 +73,6 @@ class ComidaFragment : Fragment() {
         descripcionText.setPadding(0, 4, 0, 4)
         layout.addView(descripcionText)
 
-
         val marcaText = TextView(requireContext())
         marcaText.text = "Marca: ${comida.marca}"
         marcaText.setPadding(0, 4, 0, 4)

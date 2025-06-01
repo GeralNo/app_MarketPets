@@ -16,7 +16,7 @@ class RepositoryComida {
                 val nombre = document.getString("nombre")
                 val descripcion = document.getString("descripcion")
                 val marca = document.getString("marca")
-                val precio = document.getDouble("precio")
+                val precio = document.getLong("precio")?.toInt()
                 val tamano = document.getString("tamano")
                 val disponibilidad = document.getLong("disponibilidad")?.toInt()
                 val imagen = document.getString("imagen")

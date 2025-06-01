@@ -28,9 +28,7 @@ class ComidaAdapter(
             itemView.findViewById<TextView>(R.id.comidaPrecio).text = "$ ${comida.precio ?: 0.0}"
             itemView.findViewById<TextView>(R.id.comidaTamano).text = "Tamaño: ${comida.tamano ?: 0}"
             itemView.findViewById<TextView>(R.id.comidaDisponibilidad).text = "${comida.disponibilidad ?: 0} unidades disponibles"
-            itemView.findViewById<TextView>(R.id.comidaDescripcion).text = comida.descripcion ?: "Sin descripción"
             Glide.with(context).load(comida.imagen).into(itemView.findViewById<ImageView>(R.id.comidaImage))
-
 
             itemView.findViewById<MaterialButton>(R.id.btnDetalles).setOnClickListener {
                 onItemClick(comida)
