@@ -40,5 +40,6 @@
 
     <string name="boton_detalles">Detalles</string>
     <string name="descripcion_favorito">Añadir a favoritos</string>
+    <string name="boton_eliminar">Eliminar</string>
 
 </resources>
