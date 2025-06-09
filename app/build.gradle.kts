@@ -59,12 +59,12 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
-    implementation ("androidx.navigation:navigation-fragment-ktx:2.7.5")
-    implementation ("androidx.navigation:navigation-ui-ktx:2.7.5")
-    implementation ("androidx.navigation:navigation-dynamic-features-fragment:2.7.5")
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.9.1")
+    implementation ("androidx.navigation:navigation-fragment-ktx:2.9.0")
+    implementation ("androidx.navigation:navigation-ui-ktx:2.9.0")
+    implementation ("androidx.navigation:navigation-dynamic-features-fragment:2.9.0")
     implementation ("androidx.cardview:cardview:1.0.0")
-    implementation ("androidx.fragment:fragment-ktx:1.6.1")
+    implementation ("androidx.fragment:fragment-ktx:1.8.8")
 
     implementation(platform("com.google.firebase:firebase-bom:33.13.0"))
     implementation("com.firebaseui:firebase-ui-auth:9.0.0")
