@@ -70,8 +70,8 @@ dependencies {
     implementation("com.firebaseui:firebase-ui-auth:9.0.0")
     implementation ("com.google.firebase:firebase-auth-ktx:22.1.2")
     implementation ("com.google.firebase:firebase-database-ktx")
-    implementation ("com.google.firebase:firebase-database:20.3.0")
-    implementation ("com.google.firebase:firebase-storage-ktx:20.3.0")
+    implementation ("com.google.firebase:firebase-database:22.0.0")
+    implementation ("com.google.firebase:firebase-storage-ktx:22.0.0")
     implementation ("com.google.firebase:firebase-firestore-ktx:24.10.0")
 
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
